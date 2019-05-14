@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Varela');
+
+.birds_principal {
+    height: 540px;
+    background: url(../adm_birds_img/5244.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.titulo_home{
+    font-family: 'Handlee', cursive;
+}
+
+.botones_home{
+    background: white;
+    height: 50%;
+    width: 25%;
+    padding: 2%;
+    margin-left: 35%;
+    margin-top: 3%;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.ingresar,
+.mod, .eli {
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color .15s ease-in-out;
+    font-family: 'Varela', sans-serif;
+    position:absolute;
+    z-index: 100;
+    opacity: inherit;
+    
+}
+
+.ingresar:hover {
+    cursor: pointer;
+}
+
