@@ -1,10 +1,11 @@
 <?php
 include('../../adm_header.php');
-
 ?>
 <main>
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
 	<link href='../adm_birds_css/insert.css' rel='stylesheet' type='text/css' />
+	
+	
 	<form class='form' method="post" action="../adm_birds_dll/insertardatos.php">
 		<h2>ESPECIE</h2>
 			<div class="">

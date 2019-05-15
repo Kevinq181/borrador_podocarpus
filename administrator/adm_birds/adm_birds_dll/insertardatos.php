@@ -1,20 +1,18 @@
 <?php
 include("../../security/security.php");
 
-
-
-if (!$miconexion) {
-    die('No se ha podido conectar a la base de datos');
+$con = mysqli_connect ("localhost", "root", "", "podocarpusdb");
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }else{
-    echo $_POST['nombre'];
+    //mysqli_query($con, "SELECT * FROM aves");
+    $nombre = $_POST[nombre];
+    mysqli_query($con, "INSERT INTO aves (nombre,nombre_c,descripcion,habitat) VALUES ('$_POST[nombre]', '$_POST[nombre_cientifico]', '$_POST[descripcion]', '$_POST[habitat]')");
+    mysqli_close($con);
 
-    echo $_POST['nombre_cientifico'];
-    
-    echo $_POST['descripcion'];
-    
-    echo $_POST['habitat'];
+    echo '<script>alert("Registrado con exito");</script>';
+    echo '';
 }
 
-$result = mysqli_query("insert into aves(nombre, nombre_c, descripcion,habitat) values ('$_POST[nombre]', '$_POST[nombre_cientifico]', '$_POST[descripcion]', '$_POST[habitat]')", $miconexion);
 
 ?>

@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee');
 @import url('https://fonts.googleapis.com/css?family=Handlee|Varela');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ingresar a, .mod a, .eli a{
+    color: white;
+    font-family: 'Varela', sans-serif;
+}
+
 .birds_principal {
     height: 540px;
     background: url(../adm_birds_img/5244.png);
@@ -8,39 +22,77 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgb(0, 0, 0, 0.1);
 }
 
-.titulo_home{
+.titulo_home {
     font-family: 'Handlee', cursive;
+    background: #2c2c26;
+    font-size: 40px;
+    color: white;
+    height: 20%;
+    width: 42%;
+    margin-left: 28.5%;
+    margin-top: 0%;
+    padding-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.botones_home{
+.botones_home {
     background: white;
-    height: 50%;
+    height: 54%;
     width: 25%;
     padding: 2%;
     margin-left: 35%;
-    margin-top: 3%;
-    opacity: 0.4;
+    margin-top: 1.5%;
     z-index: 0;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .ingresar,
-.mod, .eli {
+.mod,
+.eli {
+    width: 23%;
+    height:10%;
+    left: 37%;
+    font-size: 30px;
     padding: .375rem .75rem;
     border-radius: .25rem;
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color .15s ease-in-out;
-    font-family: 'Varela', sans-serif;
-    position:absolute;
-    z-index: 100;
-    opacity: inherit;
-    
+    position: fixed;
 }
 
-.ingresar:hover {
+
+.ingresar,
+.mod,
+.eli:hover {
     cursor: pointer;
 }
 
+.ingresar {
+    background: #4CAF50;
+    top: 39%;
+    padding-top: 2%;
+}
+
+.ingresar:hover {
+    background: #388E3C;
+}
+
+.mod {
+    background: #FFC107;
+    top: 55%;
+    padding-top: 2%;
+}
+
+.mod:hover {
+    background: #FFA000;
+}
+
+.eli {
+    background: #F44336;
+    top: 71%;
+    padding-top: 2%;
+}
+
+.eli:hover {
+    background: #D32F2F;
+}
