@@ -6,7 +6,7 @@ include('../adm_birds_dll/insertardatos.php');
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
 	<link href='../adm_birds_css/insert.css' rel='stylesheet' type='text/css' />
 	<form class='form' method="post" action="insertardatos.php">
-		<h2>ESPECIE</h4>
+		<h2>ESPECIE</h2>
 			<div class="">
 				<div class="form_item col-12 col-lg-5">
 					<input type="name" id="nombre" class="form_input" required>
