@@ -32,6 +32,8 @@ class clase_mysqli{
 		}
 		return$this->Conexion_ID;
 	}
+
+	
 	function consulta($sql=""){
 		if($sql==""){
 			$this->Error="NO hay ninguna sentencia sql";
@@ -82,5 +84,7 @@ class clase_mysqli{
 			return $row;
 		}
 	}
+
+	
 }
 ?>
